@@ -5,6 +5,8 @@ import numpy as np
 import re
 from nltk.corpus import stopwords #to remove unnecessary words
 from nltk.stem import WordNetLemmatizer
+nltk.download('stopwords', quiet=True)
+nltk.download('wordnet', quiet=True)
 
 
 #load the trained regression model
