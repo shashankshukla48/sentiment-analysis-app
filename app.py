@@ -39,6 +39,10 @@ def preprocess_text(text):
     return ' '.join(cleaned_tokens)
 #------------Flask application instance--------------------------
 app = Flask(__name__)
+@app.route('/')
+def home():
+    return jsonify({'message': 'Sentiment Analysis API is live! Use POST /predict with JSON {"review": "your text"}'})
+
 #------------define prediction end point-------------------------
 @app.route('/predict', methods=['POST'])##post method is used
 def predict():
