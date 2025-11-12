@@ -3,6 +3,7 @@ from flask import Flask, request, jsonify
 import joblib
 import numpy as np
 import re
+import nltk 
 from nltk.corpus import stopwords #to remove unnecessary words
 from nltk.stem import WordNetLemmatizer
 nltk.download('stopwords', quiet=True)
