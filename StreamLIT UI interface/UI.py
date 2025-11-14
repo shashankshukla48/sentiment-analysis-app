@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # ---------------- Base Config ----------------
-API_URL = 'https://sentiment-analysis-app-1-c2ar.onrender.com'
+API_URL = 'https://sentiment-analysis-app-1-c2ar.onrender.com/predict'
 st.set_page_config(page_title="Sentiment Analyzer", page_icon="💬", layout="centered")
 
 # --------------- Custom CSS for styling ----------------
@@ -101,4 +101,5 @@ if analyze_button:
         st.warning('✏️ Please enter a comment to analyze.')
 else:
     st.info('👆 Enter a comment and click **Analyze Sentiment** to begin.')
+
 
